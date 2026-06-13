@@ -132,11 +132,13 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, observerOptions);
 
-// Observe all service and project cards
-document.querySelectorAll(".service-card, .project-card").forEach((card) => {
-  card.style.opacity = "0";
-  observer.observe(card);
-});
+// Observe all service, project, and testimonial cards
+document
+  .querySelectorAll(".service-card, .project-card, .testimonial-card")
+  .forEach((card) => {
+    card.style.opacity = "0";
+    observer.observe(card);
+  });
 
 // CTA Button Click Handler
 const ctaButton = document.querySelector(".cta-button");

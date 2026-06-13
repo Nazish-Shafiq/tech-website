@@ -101,6 +101,41 @@ body {
   width: 100%;
 }
 
+.btn {
+  display: inline-block;
+  padding: 10px 22px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.btn-signin {
+  color: var(--text-dark);
+  border: 1px solid rgba(102, 126, 234, 0.25);
+  background: transparent;
+}
+
+.btn-signin:hover {
+  background: rgba(102, 126, 234, 0.08);
+  color: var(--primary-color);
+}
+
+.btn-signup {
+  color: var(--white);
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  border: 1px solid transparent;
+}
+
+.btn-signup:hover {
+  opacity: 0.95;
+}
+
 .hamburger {
   display: none;
   flex-direction: column;
@@ -300,6 +335,56 @@ body {
 
 .project-link:hover {
   color: var(--secondary-color);
+}
+
+/* Testimonials Section */
+.testimonials {
+  padding: 80px 0;
+  background: #ffffff;
+}
+
+.testimonials h2 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 50px;
+  color: var(--text-dark);
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.testimonial-card {
+  background: var(--light-bg);
+  padding: 35px;
+  border-radius: 20px;
+  border: 1px solid rgba(102, 126, 234, 0.15);
+  box-shadow: 0 10px 25px rgba(102, 126, 234, 0.08);
+  transition: var(--transition);
+}
+
+.testimonial-card:hover {
+  transform: translateY(-6px);
+}
+
+.testimonial-card p {
+  color: var(--text-dark);
+  font-size: 16px;
+  line-height: 1.9;
+  margin-bottom: 25px;
+}
+
+.testimonial-author {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  color: var(--text-light);
+}
+
+.testimonial-author strong {
+  color: var(--text-dark);
 }
 
 /* About Section */
