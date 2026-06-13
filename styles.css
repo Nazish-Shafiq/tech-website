@@ -71,10 +71,12 @@ body {
 .nav-menu {
   display: flex;
   list-style: none;
-  gap: 30px;
+  gap: 20px;
+  align-items: center;
 }
 
-.nav-link {
+.nav-link,
+.btn {
   text-decoration: none;
   color: var(--text-dark);
   font-weight: 500;
@@ -84,6 +86,37 @@ body {
 
 .nav-link:hover {
   color: var(--primary-color);
+}
+
+.btn {
+  padding: 10px 22px;
+  border-radius: 50px;
+  border: 1px solid transparent;
+  font-size: 14px;
+}
+
+.btn-signin {
+  background: transparent;
+  color: var(--text-dark);
+  border-color: rgba(102, 126, 234, 0.3);
+}
+
+.btn-signin:hover {
+  background: rgba(102, 126, 234, 0.08);
+  color: var(--primary-color);
+}
+
+.btn-signup {
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  color: var(--white);
+}
+
+.btn-signup:hover {
+  opacity: 0.95;
 }
 
 .nav-link::after {
