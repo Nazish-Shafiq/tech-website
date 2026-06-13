@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechHub Login</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="login-page">
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">TechHub</div>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="index.html#services" class="nav-link">Services</a></li>
+          <li><a href="index.html#projects" class="nav-link">Projects</a></li>
+          <li>
+            <a href="index.html#testimonials" class="nav-link">Testimonials</a>
+          </li>
+          <li><a href="index.html#about" class="nav-link">About</a></li>
+          <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+          <li><a href="index.html" class="btn btn-signin">Back</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <main class="login-container">
+      <div class="login-card">
+        <h2>Sign In to TechHub</h2>
+        <p>
+          Enter your credentials to access your dashboard and manage your
+          projects.
+        </p>
+        <form class="login-form" action="#" method="post">
+          <label for="email">Email address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="you@example.com"
+            required
+          />
+
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter your password"
+            required
+          />
+
+          <button type="submit" class="submit-button">Sign In</button>
+        </form>
+        <p class="login-note">
+          Don't have an account?
+          <a href="index.html" class="login-link">Go back to homepage</a>
+        </p>
+      </div>
+    </main>
+  </body>
+</html>
